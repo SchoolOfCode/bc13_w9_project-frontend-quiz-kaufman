@@ -26,3 +26,11 @@ SQL
 JS
 
 Generate Quiz
+
+set up states 
+1) App compoent: database data
+2) Form component: get userInput
+3) QuizGenerator: get checkbook value
+
+props:
+
