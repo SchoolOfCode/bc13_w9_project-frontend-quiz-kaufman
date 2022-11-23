@@ -45,6 +45,19 @@ export default function Form() {
       }
 
 
+      async function updateQuestion(id) {
+        
+        const response = await fetch(`/api/questions/` + id, {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        });
+        const data = await response.json();
+        console.log(data);
+        console.log("async function")
+      }
+
+
 
     function submitNewQuestion (event){
         event.preventDefault()
