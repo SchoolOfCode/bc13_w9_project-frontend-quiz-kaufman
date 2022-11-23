@@ -1,5 +1,7 @@
 import Button from "../Button"
+import {useState} from 'react'
 export default function QuizGenerator () {
+
 
     return (
         <div className="quiz-generator">
