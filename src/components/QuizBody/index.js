@@ -11,11 +11,16 @@ const TOPICS = {
 
 export default function QuizBody({ allQuestions, deleteQuestion }) {
   const [topics, setTopics] = useState([]);
+  const [randomQs, setRandomQs] = useState ([])
+  
 
   const filteredQuestions = allQuestions.filter((question) =>
     topics.some((topic) => topic === question.topic_id)
   );
-
+ 
+    
+  
+  
   return (
     <div id="quiz-body">
       <QuizGenerator setTopics={setTopics} />
