@@ -84,13 +84,13 @@ export default function QuestionCard({
       <h4 className={isActive ? "visible" : "hidden"}>Resource Links:</h4>
 
       <div className="resource-button-container">
-        <a className={isActive ? "visible" : "hidden"} href={text_link}>
+        <a className={isActive ? "visible" : "hidden"} href={text_link} target ="_blank" rel="noreferrer">
           <button className="resource-button">Article</button>
         </a>
-        <a className={isActive ? "visible" : "hidden"} href={video_link}>
+        <a className={isActive ? "visible" : "hidden"} href={video_link} target ="_blank" rel="noreferrer">
           <button className="resource-button">Video</button>
         </a>
-        <a className={isActive ? "visible" : "hidden"} href={interactive_link}>
+        <a className={isActive ? "visible" : "hidden"} href={interactive_link} target ="_blank" rel="noreferrer">
           <button className="resource-button">Practice!</button>
         </a>
       </div>
